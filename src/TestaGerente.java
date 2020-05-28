@@ -4,7 +4,7 @@ public class TestaGerente {
         Gerente jessica = new Gerente();
         jessica.setNome("Jessica Rizerio");
         jessica.setCpf("333.333.333-33");
-        jessica.setSalario(8000);
+        jessica.setSalario(5000);
         jessica.setSenha(2107);
 
         System.out.println(jessica.getNome());
@@ -13,6 +13,8 @@ public class TestaGerente {
 
         boolean autenticou = jessica.autentica(2107);
         System.out.println(autenticou);
+        System.out.println(jessica.getSalario());
+        System.out.println(jessica.getBonificacao());
     }
 
 }
