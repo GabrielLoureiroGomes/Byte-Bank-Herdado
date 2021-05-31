@@ -1,21 +1,23 @@
-public class Gerente extends Funcionario {
+package classes;
+
+import interfaces.Autenticavel;
+
+public class Cliente implements Autenticavel {
 
     private int senha;
 
+    @Override
     public void setSenha(int senha) {
         this.senha = senha;
     }
 
+    @Override
     public boolean autentica(int senha) {
+
         if (this.senha == senha) {
             return true;
         } else {
             return false;
         }
-    }
-
-    public double getBonificacao() {
-        System.out.println("Método de bonificação do gerente");
-        return super.getSalario();
     }
 }

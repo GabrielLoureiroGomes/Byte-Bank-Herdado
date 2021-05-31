@@ -1,13 +1,14 @@
+package classes;
+
 public class TestaFuncionario {
 
     public static void main(String[] args) {
-        Funcionario gabriel = new Gerente();
-        gabriel.setNome("Gabriel Loureiro");
-        gabriel.setCpf("000.000.000-00");
-        gabriel.setSalario(3000);
+        Gerente gabriel = new Gerente();
+        gabriel.setNome("Gabriel");
+        gabriel.setCpf("223355646-9");
+        gabriel.setSalario(2600.00);
 
         System.out.println(gabriel.getNome());
         System.out.println(gabriel.getBonificacao());
     }
-
 }

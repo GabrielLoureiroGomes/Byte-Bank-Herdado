@@ -1,8 +1,10 @@
+package classes;
+
 public abstract class Funcionario {
 
-    protected double salario;
     private String nome;
     private String cpf;
+    private double salario;
 
     public abstract double getBonificacao();
 
