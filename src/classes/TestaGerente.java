@@ -1,8 +1,13 @@
 package classes;
 
+import interfaces.Autenticavel;
+
 public class TestaGerente {
 
     public static void main(String[] args) {
+
+        Autenticavel referencia = new Cliente();
+
         Gerente g1 = new Gerente();
         g1.setNome("Gabriel");
         g1.setCpf("235568413");
@@ -18,5 +23,6 @@ public class TestaGerente {
         System.out.println(autenticou);
 
         System.out.println(g1.getBonificacao());
+
     }
 }
